@@ -117,7 +117,7 @@ export class BulbType {
 			dual_head = "DH";
 		} else if(!type_id == undefined) {
 			if(!BulbClass.prototype.includes(type_id)) {
-				console.warn(`Unknown typeId: ${type_id}, please report what kind of bulb this is at https://github.com/sbidy/pywizlight/issues/new`);
+				console.warn(`Unknown typeId: ${type_id}, please report what kind of bulb this is at https://github.com/FrimeX/WizJS/issues/new`);
 			}
 			this.bulb_type = BulbClass.prototype.DW[type_id];
 			dual_head = false;

@@ -23,7 +23,7 @@ export default class Utils {
     }
     generate_mac() {
         return "XX:XX:XX:XX:XX:XX".replace(/X/g, function() {
-            return "0123456789ABCDEF".charAt(Math.floor(Math.random() * 16))
+            return "0123456789ABCDEF".charAt(Math.floor(Math.random() * 16));
           });
     }
     get_source_ip(target_ip, target_port = 80) {
