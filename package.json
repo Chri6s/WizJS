@@ -1,0 +1,16 @@
+{
+  "name": "wizjs",
+  "version": "1.0.0",
+  "description": "a Javascript rewrite of \"pywizlight\"",
+  "main": "source/wrapper.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "wizlight",
+    "Javascript"
+  ],
+  "author": "FrimeX",
+  "license": "ISC"
+}
