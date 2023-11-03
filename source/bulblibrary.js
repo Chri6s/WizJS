@@ -19,7 +19,7 @@ export class Features {
 	constructor(color, color_tmp, effect, brightness = new Boolean(), dual_head = new Boolean() ) {
 		this.color = color;
 		this.color_tmp = color_tmp;
-		this.effect = effect;
+		this.effect = effect;	
 		this.brightness = brightness;
 		this.dual_head = dual_head;
 	}

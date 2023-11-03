@@ -6,30 +6,30 @@ let scenes = [
     {"name": "Fireplace", "id": 5},
     {"name": "Cozy", "id": 6},
     {"name": "Forest", "id": 7},
-     {"name": "Pastel", "id": 8},
-     {"name": "Wake up", "id": 9},
-     {"name": "Bedtime", "id": 10},
-     {"name": "Warm White", "id": 11},
-     {"name": "Daylight", "id": 12},
-     {"name": "Cool white", "id": 13},
-     {"name": "Night light", "id": 14},
-     {"name": "Focus", "id": 15},
-     {"name": "Relax", "id": 16},
-     {"name": "True colors", "id": 17},
-     {"name": "TV time", "id": 18},
-     {"name": "Plantgrowth", "id": 19},
-     {"name": "Spring", "id": 20},
-     {"name": "Summer", "id": 21},
-     {"name": "Fall", "id": 22},
-     {"name": "Deepdive", "id": 23},
-     {"name": "Jungle", "id": 24},
-     {"name": "Mojito", "id": 25},
-     {"name": "Club", "id": 26},
-     {"name": "Christmas", "id": 27},
-     {"name": "Halloween", "id": 28},
-     {"name": "Candlelight", "id": 29},
-     {"name": "Golden white", "id": 30},
-     {"name": "Pulse", "id": 31},
+    {"name": "Pastel", "id": 8},
+    {"name": "Wake up", "id": 9},
+    {"name": "Bedtime", "id": 10},
+    {"name": "Warm White", "id": 11},
+    {"name": "Daylight", "id": 12},
+    {"name": "Cool white", "id": 13},
+    {"name": "Night light", "id": 14},
+    {"name": "Focus", "id": 15},
+    {"name": "Relax", "id": 16},
+    {"name": "True colors", "id": 17},
+    {"name": "TV time", "id": 18},
+    {"name": "Plantgrowth", "id": 19},
+    {"name": "Spring", "id": 20},
+    {"name": "Summer", "id": 21},
+    {"name": "Fall", "id": 22},
+    {"name": "Deepdive", "id": 23},
+    {"name": "Jungle", "id": 24},
+    {"name": "Mojito", "id": 25},
+    {"name": "Club", "id": 26},
+    {"name": "Christmas", "id": 27},
+    {"name": "Halloween", "id": 28},
+    {"name": "Candlelight", "id": 29},
+    {"name": "Golden white", "id": 30},
+    {"name": "Pulse", "id": 31},
     {"name": "Steampunk", "id": 32},
     {"name": "Rythm", "id": 1000}
     ]
@@ -39,25 +39,28 @@ const DW_SCENES = [9, 10, 13, 14, 29, 30, 31, 32]
  * 
  * Turns Scene's Name to ID
  * @param {String} "Scene Name"
- * 
+ *  @returns {Number} "Scene ID"
 */
-function sceneNameToId(scene_name) {
-    var id;
-    scenes.forEach(element => {if(element.name == scene_name) {id = element.id}});
-    return id;
+export default function sceneNameToId(scene_name) {
+    scenes.forEach(element => {
+        if(element.name === scene_name) {
+            return id = element.id
+        }
+    });
+}
+export default function scenesByClass(Class) {
+        /*todo after bulb class is finished*/
 }
 /** 
  * 
  * Turns Scene's Id to Name
  * @param {Number} "Scene Id"
- * 
+ * @returns {String} "Scene Name"
 */
-function sceneIdToName(scene_id) {
-    var name;
-    scenes.forEach(element => {if(element.id == scene_id) {name = element.name}});
-    return name;
+export default function sceneIdToName(scene_id) {
+    scenes.forEach(element => {
+        if(element.id === scene_id) {
+            return element.name
+        }
+    });
 }
-function scenesByClass(Class) {
-
-}
-export default sceneNameToId;

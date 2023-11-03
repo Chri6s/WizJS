@@ -1,9 +1,7 @@
 export class WizLightError {
     constructor(Error) {
         this.WizLightError = () => {
-            var error = new Error();
-            error.message = "WizLightError";
-            throw error;
+            throw new Error().message = "WizLightError";
         }
     }
 }
